@@ -1,0 +1,382 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+.ant-layout-sider {
+  background: #001529;
+}
+
+.ant-layout-header {
+  background: #fff;
+  padding: 0 24px;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+}
+
+.ant-layout-content {
+  margin: 24px 16px;
+  padding: 24px;
+  background: #fff;
+  min-height: 280px;
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+.ant-menu-dark {
+  background: #001529;
+}
+
+.ant-card {
+  margin-bottom: 24px;
+}
+
+.ant-table {
+  margin-top: 16px;
+}
+
+.ant-statistic-title {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.ant-progress-text {
+  font-size: 14px;
+}
+
+.ant-tag {
+  margin-right: 8px;
+}
+
+.ant-space {
+  margin-bottom: 16px;
+}
+
+.ant-form-item {
+  margin-bottom: 24px;
+}
+
+.ant-modal-body {
+  padding: 24px;
+}
+
+.ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ant-card-extra {
+  padding: 0;
+}
+
+.ant-btn {
+  margin-right: 8px;
+}
+
+.ant-btn:last-child {
+  margin-right: 0;
+}
+
+/* 云电脑管理页面优化样式 */
+.desktop-management-stats {
+  margin-bottom: 24px;
+}
+
+.desktop-management-stats .ant-card {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.desktop-management-stats .ant-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.desktop-management-table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.desktop-management-table .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+  color: #262626;
+}
+
+.desktop-management-table .ant-table-tbody > tr:hover > td {
+  background: #f5f5f5;
+}
+
+.desktop-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.desktop-resource-progress {
+  margin-bottom: 8px;
+}
+
+.desktop-resource-progress:last-child {
+  margin-bottom: 0;
+}
+
+.desktop-resource-label {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.45);
+  margin-bottom: 2px;
+}
+
+.desktop-action-buttons {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.desktop-search-filter {
+  background: #fafafa;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #f0f0f0;
+}
+
+.desktop-detail-drawer .ant-descriptions-item-label {
+  font-weight: 600;
+  color: #262626;
+}
+
+.desktop-detail-drawer .ant-descriptions-item-content {
+  color: #595959;
+}
+
+.desktop-resource-card {
+  text-align: center;
+  padding: 16px;
+  border-radius: 8px;
+  background: #fafafa;
+  border: 1px solid #f0f0f0;
+}
+
+.desktop-resource-card .ant-statistic-title {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.desktop-resource-card .ant-progress {
+  margin-top: 8px;
+}
+
+.desktop-timeline {
+  margin-top: 16px;
+}
+
+.desktop-timeline .ant-timeline-item-content {
+  font-size: 14px;
+  color: #595959;
+}
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+  .desktop-management-stats .ant-col {
+    margin-bottom: 16px;
+  }
+  
+  .desktop-search-filter .ant-col {
+    margin-bottom: 12px;
+  }
+  
+  .desktop-action-buttons {
+    flex-wrap: wrap;
+  }
+}
+
+/* 动画效果 */
+.desktop-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.desktop-slide-in {
+  animation: slideIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 状态颜色主题 */
+.desktop-status-running {
+  color: #52c41a;
+}
+
+.desktop-status-stopped {
+  color: #ff4d4f;
+}
+
+.desktop-status-maintenance {
+  color: #faad14;
+}
+
+.desktop-status-starting {
+  color: #1890ff;
+}
+
+.desktop-status-stopping {
+  color: #faad14;
+}
+
+/* 表格行状态样式 */
+.desktop-table-row-running {
+  background-color: #f6ffed;
+}
+
+.desktop-table-row-stopped {
+  background-color: #fff2f0;
+}
+
+.desktop-table-row-maintenance {
+  background-color: #fffbe6;
+}
+
+/* 按钮组样式 */
+.desktop-button-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.desktop-button-group .ant-btn {
+  margin-right: 0;
+}
+
+/* 搜索框样式 */
+.desktop-search-input {
+  border-radius: 6px;
+}
+
+.desktop-search-input .ant-input-prefix {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* 筛选器样式 */
+.desktop-filter-select {
+  border-radius: 6px;
+}
+
+/* 模态框样式 */
+.desktop-modal .ant-modal-header {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 24px;
+}
+
+.desktop-modal .ant-modal-body {
+  padding: 24px;
+}
+
+.desktop-modal .ant-form-item-label > label {
+  font-weight: 500;
+  color: #262626;
+}
+
+/* 抽屉样式 */
+.desktop-drawer .ant-drawer-header {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 24px;
+}
+
+.desktop-drawer .ant-drawer-body {
+  padding: 24px;
+}
+
+/* 统计卡片悬停效果 */
+.desktop-stat-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.desktop-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* 表格分页样式 */
+.desktop-pagination {
+  margin-top: 16px;
+  text-align: right;
+}
+
+.desktop-pagination .ant-pagination-total-text {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* 空状态样式 */
+.desktop-empty {
+  text-align: center;
+  padding: 48px 0;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.desktop-empty .ant-empty-description {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* 加载状态样式 */
+.desktop-loading {
+  text-align: center;
+  padding: 48px 0;
+}
+
+.desktop-loading .ant-spin-dot {
+  font-size: 24px;
+}
+
+/* 错误状态样式 */
+.desktop-error {
+  text-align: center;
+  padding: 48px 0;
+  color: #ff4d4f;
+}
+
+.desktop-error .anticon {
+  font-size: 48px;
+  margin-bottom: 16px;
+} 

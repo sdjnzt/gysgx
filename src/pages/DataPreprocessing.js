@@ -234,7 +234,7 @@ function DataPreprocessing() {
     });
     setMapping(auto);
     setStats((s) => ({ ...s, rawCount: rows.length, mappedFields: Object.values(auto).filter(Boolean).length }));
-    message.success(`已生成示例数据：${rows.length} 行`);
+    // 移除成功弹窗提示
   }
 
   return (

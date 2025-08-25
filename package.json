@@ -1,9 +1,9 @@
 {
-  "name": "zoucheng-government-cloud-desktop",
+  "name": "供应商关系管理平台",
   "version": "1.0.0",
   "private": true,
-  "homepage": ".",
-  "description": "邹城市机关事务服务中心云电脑服务项目 - 构建高效协同的办公环境",
+  "homepage": "https://sdjnzt.github.io/gysgx",
+  "description": "山东康源堂药业股份有限公司供应商关系管理平台 - 构建高效协同的供应商管理体系",
   "dependencies": {
     "@ant-design/icons": "^5.0.1",
     "@ant-design/plots": "^1.2.5",
@@ -19,11 +19,16 @@
     "react-scripts": "5.0.1",
     "xlsx": "^0.18.5"
   },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/gysgx/static/css/main.aadac104.css",
-    "main.js": "/gysgx/static/js/main.cc35ecad.js",
+    "main.js": "/gysgx/static/js/main.00ee95fe.js",
     "index.html": "/gysgx/index.html",
     "main.aadac104.css.map": "/gysgx/static/css/main.aadac104.css.map",
-    "main.cc35ecad.js.map": "/gysgx/static/js/main.cc35ecad.js.map"
+    "main.00ee95fe.js.map": "/gysgx/static/js/main.00ee95fe.js.map"
   },
   "entrypoints": [
     "static/css/main.aadac104.css",
-    "static/js/main.cc35ecad.js"
+    "static/js/main.00ee95fe.js"
   ]
 }
